@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20220211 17:39:03.434" rpa="true" schemaversion="2">
+<suite id="s1" name="Debug-Browser" source="C:\xampp\htdocs\github\DebugLibrary\Tests\debug-browser.robot">
+<test id="s1-t1" name="Search Bing">
+<kw name="Open Bing">
+<kw name="Open Available Browser">
+<arg>${BING_URL}</arg>
+<msg timestamp="20220211 17:39:03.486" level="FAIL">No keyword with name 'Open Available Browser' found.</msg>
+<status status="FAIL" starttime="20220211 17:39:03.486" endtime="20220211 17:39:03.486"/>
+</kw>
+<status status="FAIL" starttime="20220211 17:39:03.484" endtime="20220211 17:39:03.488"/>
+</kw>
+<kw name="Perform Search">
+<arg>Formulated Automation Github</arg>
+<status status="NOT RUN" starttime="20220211 17:39:03.489" endtime="20220211 17:39:03.490"/>
+</kw>
+<status status="FAIL" starttime="20220211 17:39:03.482" endtime="20220211 17:39:03.491">No keyword with name 'Open Available Browser' found.</status>
+</test>
+<kw name="Teardown Actions" type="TEARDOWN">
+<kw name="Pause On Failure" library="DebugLibrary">
+<kw name="Pause Execution" library="Dialogs">
+<arg>Paused due to task failure, click OK to continue teardown</arg>
+<doc>Pauses test execution until user clicks ``Ok`` button.</doc>
+<status status="PASS" starttime="20220211 17:39:03.524" endtime="20220211 17:39:05.948"/>
+</kw>
+<status status="PASS" starttime="20220211 17:39:03.495" endtime="20220211 17:39:05.948"/>
+</kw>
+<kw name="Close All Browsers">
+<msg timestamp="20220211 17:39:05.952" level="FAIL">No keyword with name 'Close All Browsers' found.</msg>
+<status status="FAIL" starttime="20220211 17:39:05.952" endtime="20220211 17:39:05.952"/>
+</kw>
+<status status="FAIL" starttime="20220211 17:39:03.494" endtime="20220211 17:39:05.953">No keyword with name 'Close All Browsers' found.</status>
+</kw>
+<doc>Opens the browser and searches Bing</doc>
+<status status="FAIL" starttime="20220211 17:39:03.436" endtime="20220211 17:39:05.953">Suite teardown failed:
+No keyword with name 'Close All Browsers' found.</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Debug-Browser">Debug-Browser</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220211 17:39:03.470" level="ERROR">Error in file 'C:\xampp\htdocs\github\DebugLibrary\Tests\debug-browser.robot' on line 3: Importing library 'RPA.Browser.Selenium' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Vian A. Noori\AppData\Local\Programs\Python\Python310\Scripts\robot.exe
+  C:\Users\Vian A. Noori\AppData\Local\Programs\Python\Python310\python310.zip
+  C:\Users\Vian A. Noori\AppData\Local\Programs\Python\Python310\DLLs
+  C:\Users\Vian A. Noori\AppData\Local\Programs\Python\Python310\lib
+  C:\Users\Vian A. Noori\AppData\Local\Programs\Python\Python310
+  C:\Users\Vian A. Noori\AppData\Local\Programs\Python\Python310\lib\site-packages</msg>
+</errors>
+</robot>
